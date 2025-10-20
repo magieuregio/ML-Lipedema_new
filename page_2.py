@@ -19,15 +19,15 @@ st.dataframe(df1)  # Use st.table(df) if you prefer a static table
 
 
 # Display the dataset
-st.subheader("Normalized dataset")
-st.write("In this page you can see the raw database (normalized data) used for the training: ")
+# st.subheader("Normalized dataset")
+# st.write("In this page you can see the raw database (normalized data) used for the training: ")
 
 
 # Assign the Excel file
-df = pd.read_excel("raw_data.xlsx", sheet_name=0)  # Use sheet_name='Sheet1' if you know the sheet name
+# df = pd.read_excel("raw_data.xlsx", sheet_name=0)  # Use sheet_name='Sheet1' if you know the sheet name
 
 # Display the DataFrame
-st.dataframe(df)  # Use st.table(df) if you prefer a static table
+# st.dataframe(df)  # Use st.table(df) if you prefer a static table
 
 #Display images
 image_path2 = "immagine_proteine.png"
@@ -40,5 +40,6 @@ st.image("boxplots_metaboliti.png", caption="Distribution of analyzed metabolite
 st.subheader("Distribution of analyzed proteins")
 st.write("In this graph, we can see the distribution of all proteins, all overexpressed in diseases tissues (orange).")
 st.image("boxplots_proteine.png", caption="Distribution of analyzed proteins.", use_column_width=True)
+
 
 
